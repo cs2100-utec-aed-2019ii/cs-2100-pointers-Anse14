@@ -1,0 +1,53 @@
+1) 1 2 3 4 5 6 7 8 9 10
+2) 7 5 10
+3) T
+   L
+   T
+4) La 4
+5) Da error ya que se esta asignando a un puntero que almacena variables de tipo double, una variable de tipo char
+6) 
+void swap(int *x, int *y)
+{
+  int *temp = y;
+  y = x;
+  x = temp;
+}
+
+int main()
+{
+  int a = 2;
+  int b = 3;
+  swap(a, b);
+  cout << "a: " << a << "   b: " << b << endl;
+  return 0;
+}
+
+7) 2 8
+8) 0
+   8
+9) 8
+   15
+10) 8
+11) 
+int main()
+{
+  int a, *ptr = &a;
+  cout << "a: " << a << "   &a: " << &a << "   &ptr: " << &ptr << endl;
+  return 0;
+}
+
+12) 13 13 13
+13) 5 10 7
+14) 4 1
+15) 
+int main()
+{
+  int a = 1, b = 2, *ptr1 = &a, *ptr2 = &b, c = *ptr1 + *ptr2;
+  cout << c << endl;
+  return 0;
+}
+16) 19
+17) ERROR
+18) 18
+19) Elimina los espacios de el final de una cadena de texto
+20) Cambia las "," por " "
